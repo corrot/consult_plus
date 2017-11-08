@@ -1,0 +1,65 @@
+.card{
+  position: relative;
+  text-align: center;
+  padding: .675rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  img{
+      width: 100%;
+  }
+
+    &:hover > .triangle{
+        border-right: solid 40px $mainOrange_hover; 
+      z-index:1;
+      
+      @mixin transition;
+    }
+    &:hover > .card--content{
+        top: 1rem;
+    }
+
+  &--content{
+      position: absolute;
+      z-index:1;
+      top: 100%;
+      background-color: $mainOrange;
+      padding: 1rem;
+      color: #fff;
+      @mixin transition;
+
+    h4{
+        margin-bottom: 0;
+    }
+
+      p{
+          color: #fff;
+          font-weight: 300;
+      }
+  }
+  
+  .triangle{
+      position: absolute;
+      left: .25rem;
+      bottom: -1rem;
+      display: inline-block;
+      vertical-align: middle;
+      width: 30px;
+      height: 60px;
+      border-right: solid 40px $mainBlue;
+      border-bottom: solid 40px transparent;
+      border-top: solid 40px transparent;
+      transform: rotate(-45deg)
+  }
+
+  &::before{
+      content: '+';
+      position: absolute;
+      left: 20px;
+      bottom:15px;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: #fff;
+      z-index:2;
+  }
+}

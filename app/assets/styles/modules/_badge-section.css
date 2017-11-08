@@ -1,0 +1,36 @@
+.badge-section{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -33%);
+    width: 14.6rem;
+    border: #fff solid 0.5rem;
+    background: $mainBlue;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 30px 0 $twentyPShadow;
+    padding: 1rem;
+
+&--inner-border{
+    overflow: hidden;
+    border: 1px dotted #fff;
+}
+
+    h1{
+        font-size: 4.2rem;
+        margin-top: 1.8rem; 
+        margin-bottom: 0;
+    }
+
+    h5{
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        font-size: 0.625rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    img{
+        margin-top: -1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

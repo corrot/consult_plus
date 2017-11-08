@@ -1,0 +1,20 @@
+.slider{
+    position: relative;
+
+    .slider-nav{
+        background: $backingBlack;
+        padding: 40px 18px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        &--left{
+            left: 0;
+        }
+        &--right{
+            right: 0;
+        }
+    }
+
+}

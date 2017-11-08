@@ -1,0 +1,13 @@
+.contact-us{
+
+    h3, p{
+        margin: 0;
+    }
+
+    &--card{
+        padding: 2rem;
+        margin-right: 2rem;
+        border: 2px $sectionGrey solid;
+        cursor: pointer;
+    }
+}

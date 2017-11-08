@@ -1,0 +1,51 @@
+.our-blog{
+
+    &--big-image{
+        position: absolute;
+        right:0;
+        top: 0;
+        background-image: url('../../assets/images/blogs_image.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    &--topics{
+        padding-right: 3.2rem;
+            div{
+                font-weight: 500;
+            }
+
+        &--newest{
+            .date{
+                color: $mainGreen;
+            }
+        }
+    }
+
+    &--topic{
+        margin-top: 3.6rem;
+    }
+
+    &--button{
+        position: relative;
+        float: left;
+        margin-left: .8rem;
+        color: $paragraphGrey;
+        cursor: pointer;
+
+        &--old{
+            border-color: $paragraphGrey;
+        }
+    }
+
+    &--buttons-wrapper{
+        position: absolute;
+        top: -.8rem;
+        right: 0;
+    }
+
+    &--headings{
+        position: relative;
+    }
+}

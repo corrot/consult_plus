@@ -1,0 +1,13 @@
+.our-steps{
+
+    &--row{
+        padding-right: 4rem;
+    }
+
+    &--number{
+        color: $mainGreen;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top:1.25rem;
+    }
+}

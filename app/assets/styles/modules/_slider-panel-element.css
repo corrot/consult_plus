@@ -1,0 +1,55 @@
+.slider-panel-element{
+    padding: 36px;
+    color: #fff;
+    background: $mainBlue;
+    position: relative;
+
+    &--header{
+        background: $mainOrange;
+    }
+
+    &--icon-wrapper{
+        height: 32px;
+        width: 32px;
+        margin-bottom: .5rem;
+    }
+
+    &--text-wrapper{
+        display: inline;
+        white-space:nowrap;
+    }
+
+    &--chevron-wrapper{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__has-border{
+        border: 1px solid $mainBlue_hover;
+        
+        &:hover{
+            background: $mainBlue_hover;
+            @mixin transition;
+        }
+
+        img{
+            float: right;
+            margin-top: -.3rem;
+        }
+    }
+
+    h1{
+        font-weight:100;
+        margin: 0;
+    }
+    h4{
+        font-weight: 400;
+        margin: 0;
+    }
+
+}
+
+    .slider-panel{
+        max-width: 450px;
+    }

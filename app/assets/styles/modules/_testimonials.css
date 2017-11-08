@@ -1,0 +1,58 @@
+.testimonials{
+    h4{
+        margin:0;
+    }
+
+    .row{
+        margin-top: 3.2rem;
+    }
+    
+    .quoted{
+        margin-left: 2rem;
+        margin-right: 2rem;
+            margin-top: 0;
+    }
+
+    &--active{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &--client{
+        opacity: .5;
+        cursor: pointer;
+        @mixin transition;
+
+        p{
+        }
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    hr{
+        margin: 0;
+        margin-top: 2rem;
+        border: 1px solid #fff;
+    }
+
+    &--client-info{
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 6rem;
+
+        p{
+            margin-top: .5rem;
+        }
+
+        h5{
+            color: #fff;
+            margin: 0;
+            margin-top: 1rem;
+        }
+
+    }
+}

@@ -1,0 +1,44 @@
+.page-section{
+    padding: 5.5rem 0;
+
+    &--blue{
+        background: $mainBlue;
+    }
+
+    &--primary-heading{
+        font-weight:800;
+        margin-top: 0;
+        color: $mainTextBlack;
+    }
+    &--secondary-heading{
+        font-weight: 600;
+        margin: 0;
+        color: $headerTextAltGrey;
+    }
+
+    &--grey{
+        background: $sectionGrey;
+    }
+
+    &--darkgrey{
+        background: $backingBlack;
+    }
+
+    &--blue{
+        background: $mainBlue;
+
+        h4{
+            color: $lightBlue;
+        }
+        h1{
+            color: #fff;
+        }
+        p{
+            color: #fff;
+            font-weight: 300;
+        }
+        hr{
+            width: 1rem;
+        }
+    }
+}
