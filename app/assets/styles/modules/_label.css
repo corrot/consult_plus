@@ -1,8 +1,6 @@
 .label{
     border: 2px solid $mainOrange;
     background: transparent;
-    padding: .575rem 1.8rem;
-    font-size: .8rem;
     color: #fff;
     font-weight:500;
     border-radius: 2rem;
@@ -10,4 +8,12 @@
     left: 0;
     top:1.8rem;
     left: 1.8rem;
+    font-weight: 600!important;
+    padding: .36rem 1.2rem;
+    font-size: .6rem;
+
+    @mixin atMedium{
+        padding: .575rem 1.8rem;
+        font-size: .8rem;
+    }
 }

@@ -11,10 +11,15 @@
     }
 
     &--topics{
-        padding-right: 3.2rem;
-            div{
-                font-weight: 500;
-            }
+        padding-right: 0;
+
+        @mixin atMedium{
+            padding-right: 3.2rem;
+        }
+
+        div{
+            font-weight: 500;
+        }
 
         &--newest{
             .date{
@@ -37,12 +42,28 @@
         &--old{
             border-color: $paragraphGrey;
         }
+
+        &:first-child{
+            margin-left: 0
+        }
     }
 
     &--buttons-wrapper{
-        position: absolute;
-        top: -.8rem;
         right: 0;
+        position: relative;
+        display: inline-block;
+        top: 0;
+        float: right;
+        top: -3rem;
+        right: 2rem;
+
+        @mixin atMedium{
+            position: absolute;
+            top: 2rem;
+        }
+        @mixin atLarge{
+            top: -.8rem;
+        }
     }
 
     &--headings{

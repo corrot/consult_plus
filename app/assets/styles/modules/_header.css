@@ -1,47 +1,87 @@
 .upper-header{
-    line-height: 40px;
-    height: 40px;
     font-size: 0.875rem;
     color:#fff;
     font-weight: 500;
-    float:right;
     z-index: 2;
+    line-height: 40px;
+    float:right;
+    display: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+
+    @mixin atMedium{
+        display: block;
+    }
 
     ul > li{
         float: left;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 1rem;
+        padding-right: 1rem;
         border-right: none;
         @mixin: clearfix;
-
+        
         &:first-child {
             border-right: 1px solid $secondaryTextBlack;
         }
     }
-    
 }
 
 .main-header{
-    height: 100px;
     z-index: 2;
     font-weight: 500;
+    padding: 10px 0;
+
+    @mixin atMedium{
+        height: 100px;
+        padding: 0;
+    }
 
     .brand-logo{
         display: inline;
         position: relative;
-        top:50%;
-        transform: translateY(-50%);
+
+        @mixin atMedium{
+            top:50%;
+            transform: translateY(-50%);
+        }
     }
 
     .main-nav{
         float:right;
-        display: inline;
+        display: none;
         line-height: 100px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+
+        @mixin atMedium{
+            display: inline;
+        }
     }
 
     .main-nav > ul>li{
         float:left;
-        padding-left:20px;
-        padding-right:20px;
+        padding-left:1rem;
+        padding-right:1rem;
+
+        a{
+            font-size: .88rem
+        }
+    }
+}
+
+.nav-dropdown-button{
+    position: absolute;
+    top: 18px;
+    right: 10px;
+
+    @mixin atMedium{
+        display: none;
+    }
+}
+
+.nav-sm{
+    display: none;
+    @mixin atMedium{
+        display: none!important;
     }
 }

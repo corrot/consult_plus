@@ -8,6 +8,7 @@
     <meta name="keywords" content="Leading consulting company">
     <meta name="description" content="Choose your industry.">
     <link rel="stylesheet" href="app/temp/styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Montserrat:400,500,600,700|Domine" rel="stylesheet">
 </head>
 
 <body>
@@ -25,6 +26,7 @@
         <div class="wrapper">
             <header class="main-header">
                 <img class="brand-logo" src="app/assets/images/logo.png">
+                <button class="nav-dropdown-button visible-">as</button>
                 <nav class="main-nav">
                     <ul>
                         <li><a class="active" href="#home">Home</a></li>
@@ -36,6 +38,16 @@
                     </ul>
                 </nav>
             </header>
+            <div class="nav-sm">
+                <ul class="nav-dropdown">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#about-us">About us</a></li>
+                    <li><a href="#industry">Industry</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pages">Pages</a></li>
+                    <li><a href="#contact-us">Contact us</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="body-content">
@@ -45,14 +57,14 @@
                 <div class="slider-nav slider-nav--right"><img src="app/assets/images/icons/arrow_right.png" alt="right" /></div>
                 <picture>
                     <source srcset="app/assets/images/hero_image.png 1920w, app/assets/images/hero_image-hi-dpi.png 3840w" media="(min-width: 1380px)">
-                    <source srcset="app/assets/images/hero_image.png 1380w, app/assets/images/hero_image-hi-dpi.png 2760w" media="(min-width: 990px)">
-                    <source srcset="app/assets/images/hero_image.png 990w, app/assets/images/hero_image-hi-dpi.png 1980w" media="(min-width: 640px)">
-                    <img srcset="app/assets/images/hero_image.png 640w, app/assets/images/hero_image-hi-dpi.png 1280w" alt="Consult Plus Hero Image" class="large-hero__image">
+                    <source srcset="app/assets/images/hero_image_medium.png 1380w, app/assets/images/hero_image-hi-dpi.png 2760w" media="(min-width: 990px)">
+                    <source srcset="app/assets/images/hero_image_small.png 990w, app/assets/images/hero_image-hi-dpi.png 1980w" media="(min-width: 640px)">
+                    <img srcset="app/assets/images/hero_image_small.png 640w, app/assets/images/hero_image-hi-dpi.png 1280w" alt="Consult Plus Hero Image" class="large-hero__image">
                 </picture>
             </div>
-            <div class="wrapper">
+            <div class="wrapper wrapper--release">
                 <div class="row">
-                    <div class="row__medium-5 row--absolute slider-panel">
+                    <div class="slider-panel">
                         <div class="slider-panel-element slider-panel-element--header row__medium-12">
                             <h4>We are leading industry company</h4>
                             <h1>Choose your industry</h1>
@@ -97,7 +109,7 @@
                                     <span class="slider-panel-element--chevron-wrapper"><img src="app/assets/images/icons/arrow.png " /></span>
                                 </div>
                             </div>
-                            <div class="slider-panel-element row__medium-6  slider-panel-element__has-border">
+                            <div class="slider-panel-element row__medium-6  slider-panel-element__has-border text-center">
                                 <div class="btn btn--large">View more</div>
                             </div>
                         </div>
@@ -117,7 +129,7 @@
                             <div class="btn ">Read more</div>
                         </div>
                     </div>
-                    <div class="row__medium-5 relative-fixer">
+                    <div class="row__medium-5 relative-fixer text-center">
                         <img src="app/assets/images/about_us_image.png " alt="Couple walking down a street. ">
 
                         <div class="badge-section">
@@ -222,21 +234,21 @@
 
                 <hr>
                 <div class="row">
-                    <div class="row__medium-4 relative-fixer testimonials--client">
+                    <div class="row__medium-4 row__b-margin-until-medium relative-fixer testimonials--client">
                         <img src="app/assets/images/clients_1.png " alt=" ">
                         <div class="testimonials--client-info">
                             <h5>Client name</h5>
                             <p>Designation</p>
                         </div>
                     </div>
-                    <div class="row__medium-4 relative-fixer testimonials--client">
+                    <div class="row__medium-4 row__b-margin-until-medium relative-fixer testimonials--client">
                         <img src="app/assets/images/clients_2.png " alt=" ">
                         <div class="testimonials--client-info">
                             <h5>Client name</h5>
                             <p>Designation</p>
                         </div>
                     </div>
-                    <div class="row__medium-4 relative-fixer testimonials--client">
+                    <div class="row__medium-4 row__b-margin-until-medium relative-fixer testimonials--client">
                         <img src="app/assets/images/clients_3.png " alt=" ">
                         <div class="testimonials--client-info">
                             <h5>Client name</h5>
@@ -286,7 +298,7 @@
                 <h4 class="page-section--secondary-heading">For consulting</h4>
                 <h1 class="page-section--primary-heading">Contact us</h1>
                 <div class="row">
-                    <div class="row__medium-4">
+                    <div class="row__medium-4 row__b-margin-until-medium">
                         <div class="row contact-us--card">
                             <div class="row__medium-3">
                                 <img src="app/assets/images/icons/icon_email.png " alt=" " />
@@ -297,7 +309,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row__medium-4 ">
+                    <div class="row__medium-4 row__b-margin-until-medium ">
                         <div class="row contact-us--card">
                             <div class="row__medium-3">
                                 <img src="app/assets/images/icons/icon_call.png" alt=" " />
@@ -308,7 +320,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row__medium-4 ">
+                    <div class="row__medium-4 row__b-margin-until-medium ">
                         <div class="row contact-us--card">
                             <div class="row__medium-3">
                                 <img src="app/assets/images/icons/icon_career.png" alt=" " />
@@ -335,7 +347,7 @@
                         </div>
                         <div class="row__medium-6">
                             <div class="row">
-                                <div class="row__medium-4">
+                                <div class="row__medium-4 row__b-margin-until-medium">
                                     <h3>Navigation</h3>
                                     <ul>
                                         <li><a href="#">Home</a></li>
@@ -346,7 +358,7 @@
                                         <li><a href="#">Contact us</a></li>
                                     </ul>
                                 </div>
-                                <div class="row__medium-4">
+                                <div class="row__medium-4 row__b-margin-until-medium">
                                     <h3>Industry</h3>
                                     <ul>
                                         <li><a href="#">Education</a></li>
@@ -358,7 +370,7 @@
                                         <li><a href="#">Much more</a></li>
                                     </ul>
                                 </div>
-                                <div class="row__medium-4">
+                                <div class="row__medium-4 row__b-margin-until-medium">
                                     <h3>Follow Us</h3>
                                     <ul>
                                         <li><a href="#">Facebook</a></li>
@@ -377,6 +389,8 @@
             </div>
         </footer>
     </div>
+
+    <script type="text/javascript" src="app/temp/scripts/App.js"></script>
 </body>
 
 </html>

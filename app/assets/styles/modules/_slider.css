@@ -1,13 +1,18 @@
 .slider{
-    position: relative;
+    @mixin clearfix;
+    position: relative;  
 
     .slider-nav{
         background: $backingBlack;
-        padding: 40px 18px;
+        padding: 20px 12px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         cursor: pointer;
+
+        @mixin atMedium{
+            padding: 40px 18px;
+        }
 
         &--left{
             left: 0;

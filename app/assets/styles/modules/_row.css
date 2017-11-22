@@ -2,7 +2,10 @@
   @mixin clearfix;
 
   &--fixheight{
-      display: -webkit-box
+      display: block;
+      @mixin atMedium{
+      display: -webkit-box;
+      }
   }
   &--gutters {
     margin-right: -48px;

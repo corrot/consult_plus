@@ -1,8 +1,12 @@
 .slider-panel-element{
-    padding: 36px;
+    padding: 18px;
     color: #fff;
     background: $mainBlue;
     position: relative;
+
+    @mixin atMedium{
+        padding: 36px;
+    }
 
     &--header{
         background: $mainOrange;
@@ -17,6 +21,11 @@
     &--text-wrapper{
         display: inline;
         white-space:nowrap;
+
+        span{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
     }
 
     &--chevron-wrapper{
@@ -42,14 +51,27 @@
     h1{
         font-weight:100;
         margin: 0;
+        font-family: 'Lato', sans-serif;
     }
     h4{
-        font-weight: 400;
         margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
     }
 
 }
 
     .slider-panel{
-        max-width: 450px;
+        width:100%;
+
+        @mixin atMedium{
+            margin-left: 60px;
+            position: absolute;
+            bottom: 0;
+            max-width: 450px;
+        }
+
+        @mixin atLarge{
+            margin-left: 0;
+        }
     }

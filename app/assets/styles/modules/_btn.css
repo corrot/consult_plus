@@ -2,18 +2,25 @@
     background-color: $mainGreen;
     color: #fff;
     text-decoration: none;
-    padding: 1rem 1.5rem;
     display: inline-block;
     border-radius: 2rem;
-    font-size: .85rem;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: .8rem 1.2rem;
+    font-size: .65rem;
+
+    @mixin atMedium{
+        padding: 1rem 1.5rem;
+        font-size: .85rem;
+    }
 
     &--orange{
         background-color: $mainOrange;
     }
 
     &--large{
-        padding: 1.25rem 2.25rem;
+        padding: 1.25rem 1.8rem;
         font-size: .75rem;
 
         @mixin atSmall{

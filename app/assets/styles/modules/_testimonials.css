@@ -8,14 +8,27 @@
     }
     
     .quoted{
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin: 8px;
+        margin-top: 0;
+
+        @mixin atMedium{
+            margin-left: 2rem;
+            margin-right: 2rem;
             margin-top: 0;
+        }
     }
 
     &--active{
         display: flex;
         align-items: flex-start;
+
+        img{
+            max-width: 10%;
+
+            @mixin atMedium{
+                max-width: 100%;
+            }
+        }
     }
 
     &--client{
@@ -42,7 +55,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        margin-left: 6rem;
+        margin-left: 3rem;
 
         p{
             margin-top: .5rem;

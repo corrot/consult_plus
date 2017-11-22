@@ -1,12 +1,21 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: #333;
+    overflow-x: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.image-center>img{
+    margin: auto;
 }
 
 img{
     max-width: 100%;
     height: auto;
-    display: block;
+    // display: block;
 }
 
 ul, li{
@@ -29,14 +38,18 @@ a{
 picture{
     display: inline-grid;
 }
-
+h1{
+    font-size: 1.9rem;
+}
 h1, h2, h3, h4, h5, button, a, span, .btn, .label{
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p{
     line-height: 1.8rem;
     font-size: .925rem;
+    font-family: 'Domine', sans-serif;
     font-weight: 500;
     color: $paragraphGrey;
 }
@@ -62,5 +75,9 @@ p{
 }
 
 .body-content{
-    margin-top: 126px;
+    margin-top: 52px;
+
+    @mixin atMedium{
+        margin-top: 126px;
+    }
 }

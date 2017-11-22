@@ -16,7 +16,7 @@
         margin-right: -4rem;
         outline: none;
         padding: 1rem;
-        width: 24rem;
+        // width: 24rem;
         background: $inputGrey;
         color: #fff;
         font-weight: 600;

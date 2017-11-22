@@ -1,7 +1,12 @@
 .our-steps{
 
     &--row{
-        padding-right: 4rem;
+        text-align: center;
+        padding-right: 0;
+        @mixin atMedium{
+            padding-right: 4rem;
+            text-align: left;
+        }
     }
 
     &--number{

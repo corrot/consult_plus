@@ -6,8 +6,13 @@
 
     &--card{
         padding: 2rem;
-        margin-right: 2rem;
+        margin-right: 0;
         border: 2px $sectionGrey solid;
         cursor: pointer;
+            text-align: center;
+        @mixin atMedium{
+            text-align: left;
+        margin-right: 2rem;
+        }
     }
 }
