@@ -1,3 +1,3 @@
-var $ = require('jquery');
+import MobileMenu from './modules/MobileMenu';
 
-var HashChange = require('./modules/HashChange');
+var mobileMenu = new MobileMenu();

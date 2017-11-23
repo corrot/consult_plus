@@ -65,14 +65,45 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var $ = __webpack_require__(1);
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__ = __webpack_require__(1);
 
-var HashChange = __webpack_require__(2);
+
+var mobileMenu = new __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__["a" /* default */]();
 
 /***/ }),
 /* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+
+
+class MobileMenu {
+    constructor() {
+        this.menuIcon = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#nav-toggler');
+        this.menuContent = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.nav-sm');
+        this.events();
+    }
+
+    events() {
+        this.menuIcon.click(this.toggleTheMenu.bind(this));
+    }
+
+    toggleTheMenu() {
+        this.menuContent.toggleClass('nav-sm--visible');
+        this.menuContent.slideToggle();
+    }
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (MobileMenu);
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10330,14 +10361,6 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-window.addEventListener("hashchange", function() {
-    window.scrollTo(window.scrollX, window.scrollY - 136);
-});
 
 /***/ })
 /******/ ]);

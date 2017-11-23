@@ -3,12 +3,12 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
     <title>Consult Plus</title>
     <meta name="keywords" content="Leading consulting company">
     <meta name="description" content="Choose your industry.">
     <link rel="stylesheet" href="app/temp/styles/styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300|Montserrat:400,500,600,700|Domine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -23,10 +23,10 @@
                 </div>
             </div>
         </div>
-        <div class="wrapper">
-            <header class="main-header">
+        <div class="wrapper wrapper--release">
+            <header class="main-header main-header--padding-sm">
                 <img class="brand-logo" src="app/assets/images/logo.png">
-                <button class="nav-dropdown-button visible-">as</button>
+                <div id="nav-toggler" class="nav-dropdown-button visible-"><i class="material-icons">dehaze</i></div>
                 <nav class="main-nav">
                     <ul>
                         <li><a class="active" href="#home">Home</a></li>
@@ -38,7 +38,7 @@
                     </ul>
                 </nav>
             </header>
-            <div class="nav-sm">
+            <div class="nav-sm main-header--padding-sm">
                 <ul class="nav-dropdown">
                     <li><a class="active" href="#home">Home</a></li>
                     <li><a href="#about-us">About us</a></li>
@@ -56,10 +56,10 @@
                 <div class="slider-nav slider-nav--left"><img src="app/assets/images/icons/arrow_left.png" alt="left" /></div>
                 <div class="slider-nav slider-nav--right"><img src="app/assets/images/icons/arrow_right.png" alt="right" /></div>
                 <picture>
-                    <source srcset="app/assets/images/hero_image.png 1920w, app/assets/images/hero_image-hi-dpi.png 3840w" media="(min-width: 1380px)">
-                    <source srcset="app/assets/images/hero_image_medium.png 1380w, app/assets/images/hero_image-hi-dpi.png 2760w" media="(min-width: 990px)">
-                    <source srcset="app/assets/images/hero_image_small.png 990w, app/assets/images/hero_image-hi-dpi.png 1980w" media="(min-width: 640px)">
-                    <img srcset="app/assets/images/hero_image_small.png 640w, app/assets/images/hero_image-hi-dpi.png 1280w" alt="Consult Plus Hero Image" class="large-hero__image">
+                    <source srcset="app/assets/images/hero_image.png 1920w" media="(min-width: 1380px)">
+                    <source srcset="app/assets/images/hero_image_medium.png 1380w" media="(min-width: 990px)">
+                    <source srcset="app/assets/images/hero_image_small.png 990w" media="(min-width: 640px)">
+                    <img srcset="app/assets/images/hero_image_small.png 640w" alt="Consult Plus Hero Image" class="large-hero__image">
                 </picture>
             </div>
             <div class="wrapper wrapper--release">
