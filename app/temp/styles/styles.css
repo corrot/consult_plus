@@ -681,6 +681,13 @@ p{
         padding: 10px 15px;
     }
 
+@media(min-width: 800px){
+
+.main-header--padding-sm{
+            padding: 0
+    }
+    }
+
 .main-header .brand-logo{
         display: inline;
         position: relative;

@@ -38,6 +38,10 @@
 
     &--padding-sm{
         padding: 10px 15px;
+
+        @mixin atMedium{
+            padding: 0;
+        }
     }
 
     .brand-logo{
