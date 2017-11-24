@@ -60,50 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__ = __webpack_require__(1);
-
-
-var mobileMenu = new __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__["a" /* default */]();
-
-/***/ }),
-/* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-
-
-class MobileMenu {
-    constructor() {
-        this.menuIcon = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#nav-toggler');
-        this.menuContent = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.nav-sm');
-        this.events();
-    }
-
-    events() {
-        this.menuIcon.click(this.toggleTheMenu.bind(this));
-    }
-
-    toggleTheMenu() {
-        this.menuContent.toggleClass('nav-sm--visible');
-        this.menuContent.slideToggle();
-    }
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (MobileMenu);
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10361,6 +10322,86 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_Slider__ = __webpack_require__(3);
+
+
+
+var mobileMenu = new __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__["a" /* default */]();
+var slider = new __WEBPACK_IMPORTED_MODULE_1__modules_Slider__["a" /* default */]();
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+
+
+class MobileMenu {
+    constructor() {
+        this.menuIcon = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#nav-toggler');
+        this.menuContent = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.nav-sm');
+        this.events();
+    }
+
+    events() {
+        this.menuIcon.click(this.toggleTheMenu.bind(this));
+    }
+
+    toggleTheMenu() {
+        this.menuContent.toggleClass('nav-sm--visible');
+        this.menuContent.slideToggle();
+    }
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (MobileMenu);
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+
+
+class Slider {
+    constructor() {
+        this.leftButton = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.slider-nav--left');
+        this.rightButton = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.slider-nav--right');
+        this.sliderContent = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.slider-content');
+    }
+
+    events() {
+        this.leftButton.click(this.goLeft.bind(this));
+        this.rightButton.click(this.goRight.bind(this));
+    }
+
+    goLeft() {
+        if (this._imageIndex == 0) {
+            this._imageIndex = this._images.length;
+        }
+        this._imageIndex -= 1;
+    }
+
+    goRight() {
+        if (this._imageIndex == this._images.length - 1) {
+            this._imageIndex = -1;
+        }
+        this._imageIndex += 1;
+    }
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (Slider);
 
 /***/ })
 /******/ ]);
