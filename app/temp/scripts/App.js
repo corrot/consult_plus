@@ -10332,6 +10332,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_Slider__ = __webpack_require__(3);
 
+// import HashChange from './modules/HashChange';
 
 
 var mobileMenu = new __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__["a" /* default */]();
@@ -10379,26 +10380,40 @@ class Slider {
         this.leftButton = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.slider-nav--left');
         this.rightButton = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.slider-nav--right');
         this.sliderContent = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.slider-content');
+        this.slider = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.slider')
+        this._imageIndex = 0;
+        this.events();
     }
 
     events() {
         this.leftButton.click(this.goLeft.bind(this));
         this.rightButton.click(this.goRight.bind(this));
+
+        setInterval(this.goRight.bind(this), 3000);
     }
 
     goLeft() {
+        this.slider.find('.active').removeClass('active');
+
         if (this._imageIndex == 0) {
-            this._imageIndex = this._images.length;
+            this._imageIndex = this.sliderContent.length;
         }
         this._imageIndex -= 1;
+
+        this.slider.find('#pic-' + this._imageIndex).addClass('active');
     }
 
     goRight() {
-        if (this._imageIndex == this._images.length - 1) {
+        this.slider.find('.active').removeClass('active');
+
+        if (this._imageIndex == this.sliderContent.length - 1) {
             this._imageIndex = -1;
         }
         this._imageIndex += 1;
+
+        this.slider.find('#pic-' + this._imageIndex).addClass('active');
     }
+
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (Slider);

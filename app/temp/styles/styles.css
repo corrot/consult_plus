@@ -784,6 +784,7 @@ p{
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         cursor: pointer;
+        z-index:1;
     }
 
 @media(min-width: 800px){
@@ -800,6 +801,24 @@ p{
 .slider .slider-nav--right{
             right: 0;
         }
+
+.slider-content{
+    visibility: hidden;
+    opacity: 0;
+    float: left!important;
+    position: absolute;;
+}
+
+.slider-content.active{
+    position: relative;
+    display: inline-grid;
+    visibility: visible;
+    -webkit-transition: .3s all ease;
+    transition: .3s all ease;
+    -webkit-transition-delay: .1s;
+            transition-delay: .1s;
+    opacity: 1;
+}
 
 .slider-panel-element{
     padding: 18px;

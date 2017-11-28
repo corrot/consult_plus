@@ -9,6 +9,7 @@
         top: 50%;
         transform: translateY(-50%);
         cursor: pointer;
+        z-index:1;
 
         @mixin atMedium{
             padding: 40px 18px;
@@ -22,4 +23,20 @@
         }
     }
 
+}
+
+.slider-content{
+    visibility: hidden;
+    opacity: 0;
+    float: left!important;
+    position: absolute;;
+}
+
+.slider-content.active{
+    position: relative;
+    display: inline-grid;
+    visibility: visible;
+    transition: .3s all ease;
+    transition-delay: .1s;
+    opacity: 1;
 }

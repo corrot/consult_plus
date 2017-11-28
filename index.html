@@ -55,9 +55,21 @@
             <div class="slider">
                 <div class="slider-nav slider-nav--left"><img src="app/assets/images/icons/arrow_left.png" alt="left" /></div>
                 <div class="slider-nav slider-nav--right"><img src="app/assets/images/icons/arrow_right.png" alt="right" /></div>
-                <div>
-                    <picture class="slider-content">
+                <div class="slider-wrapper">
+                    <picture id="pic-0" class="slider-content active">
                         <source class="image-lg" srcset="app/assets/images/hero_image.png 1920w" media="(min-width: 1380px)">
+                        <source class="image-md" srcset="app/assets/images/hero_image_medium.png 1380w" media="(min-width: 990px)">
+                        <source class="image-sm" srcset="app/assets/images/hero_image_small.png 990w" media="(min-width: 640px)">
+                        <img class="image-xs" srcset="app/assets/images/hero_image_small.png 640w" alt="Consult Plus Hero Image" class="large-hero__image">
+                    </picture>
+                    <picture id="pic-1" class="slider-content">
+                        <source class="image-lg" srcset="app/assets/images/hero_image1.png 1920w" media="(min-width: 1380px)">
+                        <source class="image-md" srcset="app/assets/images/hero_image_medium.png 1380w" media="(min-width: 990px)">
+                        <source class="image-sm" srcset="app/assets/images/hero_image_small.png 990w" media="(min-width: 640px)">
+                        <img class="image-xs" srcset="app/assets/images/hero_image_small.png 640w" alt="Consult Plus Hero Image" class="large-hero__image">
+                    </picture>
+                    <picture id="pic-2" class="slider-content">
+                        <source class="image-lg" srcset="app/assets/images/hero_image2.png 1920w" media="(min-width: 1380px)">
                         <source class="image-md" srcset="app/assets/images/hero_image_medium.png 1380w" media="(min-width: 990px)">
                         <source class="image-sm" srcset="app/assets/images/hero_image_small.png 990w" media="(min-width: 640px)">
                         <img class="image-xs" srcset="app/assets/images/hero_image_small.png 640w" alt="Consult Plus Hero Image" class="large-hero__image">
