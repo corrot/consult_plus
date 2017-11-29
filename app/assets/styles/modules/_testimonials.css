@@ -6,7 +6,7 @@
     .row{
         margin-top: 3.2rem;
     }
-    
+
     .quoted{
         margin: 8px;
         margin-top: 0;
@@ -36,12 +36,14 @@
         cursor: pointer;
         @mixin transition;
 
-        p{
-        }
-
         &:hover{
-            opacity: 1;
+            opacity: .85;
         }
+    }
+
+    .testimonials--client.active{
+            opacity: 1;
+            transition: .5s all ease-in;
     }
 
     hr{

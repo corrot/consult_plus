@@ -806,7 +806,7 @@ p{
     visibility: hidden;
     opacity: 0;
     float: left!important;
-    position: absolute;;
+    position: absolute;
 }
 
 .slider-content.active{
@@ -1253,12 +1253,15 @@ p{
         transition: all ease .3s;
     }
 
-.testimonials--client p{
+.testimonials--client:hover{
+            opacity: .85;
         }
 
-.testimonials--client:hover{
+.testimonials .testimonials--client.active{
             opacity: 1;
-        }
+            -webkit-transition: .5s all ease-in;
+            transition: .5s all ease-in;
+    }
 
 .testimonials hr{
         margin: 0;

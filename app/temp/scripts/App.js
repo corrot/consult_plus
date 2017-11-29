@@ -10331,12 +10331,15 @@ return jQuery;
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_Slider__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_Testimonials__ = __webpack_require__(4);
 
 // import HashChange from './modules/HashChange';
 
 
+
 var mobileMenu = new __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__["a" /* default */]();
 var slider = new __WEBPACK_IMPORTED_MODULE_1__modules_Slider__["a" /* default */]();
+var testimonials = new __WEBPACK_IMPORTED_MODULE_2__modules_Testimonials__["a" /* default */]();
 
 /***/ }),
 /* 2 */
@@ -10417,6 +10420,50 @@ class Slider {
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (Slider);
+
+/***/ }),
+/* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+
+
+class Testimonials {
+    constructor() {
+        this.testimonialsWrapper = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.row--testimonials');
+        this.testimonials = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.testimonials--client');
+        this._testimonialIndex = 0;
+        this.events();
+    }
+
+    events() {
+        // this.testimonials.click(this.GotoTestimonial.bind(this));
+
+        setInterval(this.NextTestimonial.bind(this), 5000);
+    }
+
+    NextTestimonial() {
+        this.testimonialsWrapper.find('.active').removeClass('active');
+
+        if (this._testimonialIndex == this.testimonials.length - 1) {
+            this._testimonialIndex = -1;
+        }
+
+        this._testimonialIndex += 1;
+
+        this.testimonialsWrapper.find('#testimonial-' + this._testimonialIndex).addClass('active');
+    }
+
+    // GotoTestimonial() {
+    //     this.testimonials.removeClass('active');
+    //     console.log(this)
+    // }
+
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (Testimonials);
 
 /***/ })
 /******/ ]);
